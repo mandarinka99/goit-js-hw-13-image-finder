@@ -17,6 +17,20 @@
   </head>
   <body>
    
+    <form class="search-form" id="search-form">
+      <input
+        class="search-form__input"
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit" class="btn search-form__btn" id="search-btn">Искать</button>
+    </form>
+
+    <ul class="gallery"></ul>
+
+    <div id="sentinel"></div>
  
     <script src="./index.js"></script>
   </body>

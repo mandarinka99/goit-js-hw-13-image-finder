@@ -1,2 +1,108 @@
 
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  padding: 0;
+  margin: 0;
+}
 
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-form {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.search-form__input {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px 15px;
+  margin-right: 15px;
+  border-radius: 3px;
+}
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+  font-size: inherit;
+  height: 42px;
+  min-width: 100px;
+  padding: 10px 20px;
+  background-color: #20097c;
+  border-radius: 5px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.search-form__btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #20097c;
+}
+
+.photo-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform var(--animation-duration) var(--timing-function);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.photo-card {
+  padding: 5px;
+  margin: 15px;
+  width: calc((100% - 120px) / 4);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.photo-card img:hover {
+  transform: scale(1.03);
+}
+
+.photo-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats-item {
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.material-icons {
+  display: flex;
+  justify-content: center;
+}
