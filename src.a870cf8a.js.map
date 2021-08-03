@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["API_URL"],"mappings":";;;AAIA,aAJA,QAAA,oBAIA,MAAMA,EAAU","file":"src.a870cf8a.js","sourceRoot":"../src","sourcesContent":["import './sass/main.scss'\n\n\n\nconst API_URL = 'https://pixabay.com/api/?key=22769263-58fdf689ff7727797c0ddae89';\n"]}
