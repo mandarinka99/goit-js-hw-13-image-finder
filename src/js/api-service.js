@@ -1,6 +1,6 @@
 const API_URL = 'https://pixabay.com/api';
 const API_KEY = '22769263-58fdf689ff7727797c0ddae89';
-const { info } = require('@pnotify/core');
+const { info, error } = require('@pnotify/core');
 
 export default class ImagesApiService {
   constructor() {
@@ -27,12 +27,11 @@ export default class ImagesApiService {
       const res = await fetch(url);
       if (res.status !== 200) {
         const text = await res.text();
-        console.info(text)
-        
+        error ({text: text});
         return data;
       }
       data = await res.json();
-      this.total = data.total;
+      this.total = data.totalHits;
     } catch (e) {
       return data;
     }
